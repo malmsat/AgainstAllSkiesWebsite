@@ -11,18 +11,72 @@
             src: url("fonts/victorian-orchid-light.woff2") format("woff2"),
                 url("fonts/victorian-orchid-light.woff") format("woff");
             font-weight: 300;
+            font-style: light;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: "Victorian Orchid SemiBold";
+            src: url("fonts/victorian-orchid-semibold.woff2") format("woff2"),
+                url("fonts/victorian-orchid-semibold.woff") format("woff");
+            font-weight: 600;
             font-style: normal;
             font-display: swap;
         }
+
         body {
             font-family: "Victorian Orchid Light", serif;
             background: black;
             color: white;
+            line-height: 1.6;
+            letter-spacing: 0.03em;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        h1 { 
+            font-family: Victorian Orchid SemiBold, serif;
+            font-weight: normal; 
+            margin-bottom: 20px;
+            font-variant: small-caps;
+            color: rgb(247, 247, 196);
+            font-size: 50px;
+        }
+
+        h2 { 
+            font-family: Victorian Orchid SemiBold, serif;
+            font-weight: normal; 
+            margin-top: 35px;
+            margin-bottom: 20px;
+            font-variant: small-caps;
+            color: rgb(247, 247, 196);
+        }
+
+        p { font-weight: lighter; 
+            margin-bottom: 20px;
+        }
+
+        a {
+        color: rgb(200, 205, 255);
+        }
+        
+         ul {
+            margin-left: 50px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+         li {
+            margin-bottom: 10px;
         }
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 20px;
         }
 
         /* Header */
@@ -167,17 +221,6 @@
             border-radius: 0px;
         }
 
-
-        main {
-            max-width: 1000px;
-            margin: 60px auto;
-            padding: 0 20px;
-        }
-
-        h1 {
-            margin-bottom: 20px;
-        }
-
         .media-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -238,12 +281,26 @@
 </header>
 
 <main>
-    <h1>Game Title</h1>
+    <h1>About Against All Skies</h1>
 
     <p>
-        Short introduction to the game goes here.  
-        One or two paragraphs describing the premise, genre, tone, and key features.
+        Bring revolution to the skies in this party-based deckbuilder with roguelite storytelling. Navigate treacherous sky islands, build unique decks for a crew of unlikely heroes and breach the storm to uncover the true cost of power.
     </p>
+    <p>
+        In Against All Skies, you can advance or delay party members during combat to achieve Resonance turns. Empowered by this teamwork, characters gain more tactical variety and activate enhanced abilities.
+    </p>
+    <p>
+        Experiment with new combos to unlock the full potential of your party as they venture into the unknown.
+    </p>
+    <h2>Key Features</h2>
+    <ul>
+        <li>Assemble up to 10 different combinations of characters for your party.</li>
+        <li>Enjoy endlessly different deckbuilding approaches and experiment with hundreds of cards.</li>
+        <li>Dive into a dynamic turn-based combat system leading to unexpected advantages and combos when Resonating with your party.</li>
+        <li>Navigate through different island environments that bring their own challenges and rewards each run.</li>
+        <li>Unlock party-enhancing artifacts or character-specific gadgets.</li>
+        <li>Experience a rich world and cast of characters with their own personal journeys.</li>
+    </ul>
 
     <div class="media-grid">
         <img src="gif1.gif" alt="Gameplay GIF">
