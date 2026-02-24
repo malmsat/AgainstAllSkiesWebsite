@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Privacy Policy – Against All Skies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        @font-face {
+            font-family: "Victorian Orchid Light";
+            src: url("fonts/victorian-orchid-light.woff2") format("woff2"),
+                url("fonts/victorian-orchid-light.woff") format("woff");
+            font-weight: 300;
+            font-style: light;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: "Victorian Orchid SemiBold";
+            src: url("fonts/victorian-orchid-semibold.woff2") format("woff2"),
+                url("fonts/victorian-orchid-semibold.woff") format("woff");
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        body {
+            font-family: "Victorian Orchid Light", serif;
+            background: black;
+            color: white;
+            line-height: 1.6;
+            letter-spacing: 0.03em;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        h1 { 
+            font-family: Victorian Orchid SemiBold, serif;
+            font-weight: normal; 
+            margin-bottom: 20px;
+            font-variant: small-caps;
+            color: rgb(247, 247, 196);
+            font-size: 50px;
+        }
+
+        h2 { 
+            font-family: Victorian Orchid SemiBold, serif;
+            font-weight: normal; 
+            margin-top: 35px;
+            margin-bottom: 20px;
+            font-variant: small-caps;
+            color: rgb(247, 247, 196);
+        }
+
+        p { font-weight: lighter; 
+            margin-bottom: 20px;
+        }
+
+        a {
+        color: rgb(200, 205, 255);
+        }
+        
+         ul {
+            margin-left: 50px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+         li {
+            margin-bottom: 10px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 1px;
+            left: 0;
+            width: 100%;
+            padding: 4px 24px;
+            z-index: 10;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            background: rgb(0, 0, 0);
+            outline: rgb(187, 187, 151) solid 1px; /* thin outline for visibility */
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Social icons group */
+        .social-icons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* Space between socials and action buttons */
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-left: 40px; /* THIS is the separation you want */
+        }
+
+        /* Social icons */
+        .social-icons img {
+            width: auto;
+            height: 20px;
+            opacity: 0.8;
+            transition: transform 0.2s ease;
+        }
+
+        .social-icons a:hover img {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        /* Press kit + Wishlist (bigger) */
+        .header-actions img {
+            width: auto;
+            height: 40px;
+            opacity: 0.9;
+            transition: transform 0.2s ease;
+        }
+
+        .site-footer {
+            z-index: 3;
+            bottom: 1px;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            background: black;
+            color: #aaa;
+            font-size: 14px;
+            outline: rgb(187, 187, 151) solid 1px; /* thin outline for visibility */
+        }
+
+        .site-footer a {
+            color: #aaa;
+            text-decoration: none;
+        }
+
+        .site-footer a:hover {
+            color: white;
+        }
+
+        .footer-separator {
+            margin: 0 10px;
+        }
+
+        @media (max-width: 768px) {
+            .company-logo {
+                height: 28px;
+            }
+
+            .social-icons img {
+                width: 16px;
+                height: 16px;
+            }
+
+            .header-actions img {
+                width: 22px;
+                height: 22px;
+            }
+
+            .header-actions {
+                margin-left: 20px;
+            }
+        }
+
+        .header-actions a:hover img {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        header a:hover {
+            opacity: 1;
+        }
+
+        header a img {
+            width: auto;
+            height: 20px;
+            transition: transform 0.2s ease;
+        }
+
+        header a:hover img {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        .steam-button-header{
+            padding: 10px 20px;
+            font-size: 14px;
+            background: #ffffff;
+            color: rgb(0, 0, 0);
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 0px;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <!-- Left: Company logo -->
+    <div class="social-icons">
+        <a href="index.html">
+            <img src="img/company-logo.png" alt="Company Logo" class="company-logo">
+        </a>
+            </a>
+            <a href="https://www.youtube.com/@AgainstAllSkies" target="_blank">
+                <img src="img/Youtube_Logo.png" alt="YouTube">
+            </a>
+            <a href="https://www.instagram.com/againstallskies/" target="_blank">
+                <img src="img/Instagram_Logo.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@against_all_skies" target="_blank">
+                <img src="img/TikTok_Logo.png" alt="TikTok">
+            </a>
+            <a href="https://bsky.app/profile/againstallskies.bsky.social" target="_blank">
+                <img src="img/Bluesky_Logo.png" alt="Bluesky">
+            </a>
+    </div>
+
+    <!-- Right: Socials + actions -->
+
+
+        <div class="header-actions">
+            <a href="press.html">
+                <img src="img/presskit-button.png" alt="Press Kit">
+            </a>
+            <a href="https://store.steampowered.com/app/3938910/Against_All_Skies/" target="_blank">
+                <img src="img/wishlist-button.png" alt="Wishlist on Steam">
+            </a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <h1>Privacy Policy</h1>
+
+    <p>
+        This Privacy Policy describes how your personal information is collected, used, and shared when you visit associated links to Against All Skies
+    </p>
+    <h2>
+        Personal information we collect
+    </h2>
+    <p>
+        When you visit the Site, we automatically collect certain information about your device, including information about your web browser, IP address, time zone, and some of the cookies that are installed on your device. Additionally, as you browse the Site, we collect information about the individual pages that you view, what websites or search terms referred you to the Site, and information about how you interact with the Site. We refer to this automatically-collected information as “Device Information.”
+    </p>
+    <p>
+        We collect Device Information using the following technologies:
+    </p>
+    <ul>
+    <li>Cookies” are data files that are placed on your device or computer and often include an anonymous unique identifier. For more information about cookies, and how to disable cookies, visit <a href="http://www.allaboutcookies.org">www.allaboutcookies.org</a>.</li>
+    <li>“Log files” track actions occurring on the Site, and collect data including your IP address, browser type, Internet service provider, referring/exit pages, and date/time stamps.</li>
+    <li>“Web beacons,” “tags,” and “pixels” are electronic files used to record information about how you browse the Site.</li>
+    </ul>
+    <p>
+        We refer to this information as “Order Information.”
+    </p>
+    <p>
+        Also if you choose to sign up to receive further information and updates about our games, we will collect your name and email address.
+    </p>
+    <p>
+        When we talk about “Personal Information” in this Privacy Policy, we are talking both about Device Information and Order Information.
+    </p>
+    <h2>
+        How we use your personal information
+    </h2>
+    <p>
+        We use this Order Information to:
+    </p>
+    <p>
+        Communicate with you;
+    </p>
+    <p>
+        When in line with the preferences you have shared with us, provide you with information or advertising relating to our products or services;
+    </p>
+    <p>
+        Send you updates about our new products if you have signed up for this communication.
+    </p>
+    <p>
+        We use the Device Information that we collect to help us screen for potential risk and fraud (in particular, your IP address), and more generally to improve and optimize our Site (for example, by generating analytics about how our customers browse and interact with the Site, and to assess the success of our marketing and advertising campaigns)..
+    </p>
+    <p>
+        We share your Personal Information with third parties to help us use your Personal Information, as described above. 
+    </p>
+    <p>
+        We also use Google Analytics to help us understand how our customers use the Site--you can read more about how Google uses your Personal Information here:  
+    </p>
+    <p>
+        <a href="https://www.google.com/intl/en/policies/privacy/">https://www.google.com/intl/en/policies/privacy/</a>
+    </p>
+    <p>
+        You can also opt-out of Google Analytics here:  <a href="https://tools.google.com/dlpage/gaoptout">https://tools.google.com/dlpage/gaoptout</a>.
+    </p>
+    <p>
+        Finally, we may also share your Personal Information to comply with applicable laws and regulations, to respond to a subpoena, search warrant or other lawful request for information we receive, or to otherwise protect our rights.
+    </p>
+    <p>
+        As described above, we use your Personal Information to provide you with targeted advertisements or marketing communications we believe may be of interest to you.  For more information about how targeted advertising works, you can visit the Network Advertising Initiative’s (“NAI”) educational page at http://www.networkadvertising.org/understanding-online-advertising/how-does-it-work.
+    </p>
+    <p>
+        You can opt out of targeted advertising by:
+    </p>
+    <p>
+        FACEBOOK -  <a href="https://www.facebook.com/settings/?tab=adsy:">https://www.facebook.com/settings/?tab=adsy:</a>
+    </p>
+    <p>
+        GOOGLE -  <a href="https://www.google.com/settings/ads/anonymous">https://www.google.com/settings/ads/anonymous</a>
+    </p>
+    <p>
+        Additionally, you can opt out of some of these services by visiting the Digital Advertising Alliance’s opt-out portal at:  <a href="http://optout.aboutads.info/">http://optout.aboutads.info/</a>.
+    </p>
+
+    <h2>
+        Do not track
+    </h2>
+    <p>
+        Please note that we do not alter our Site’s data collection and use practices when we see a Do Not Track signal from your browser.
+    </p>
+    <h2>
+        Your rights
+    </h2>
+    <p>
+        If you are a European resident, you have the right to access personal information we hold about you and to ask that your personal information be corrected, updated, or deleted. If you would like to exercise this right, please contact us through the contact information below.
+    </p>
+    <p>
+        Additionally, please note that your information will be transferred outside of Europe, including to Canada and the United States.
+    </p>
+    <h2>
+        Data retention
+    </h2>
+    <p>
+        When you place an order through the Site, we will maintain your Order Information for our records unless and until you ask us to delete this information.
+    </p>
+    <h2>
+        Changes
+    </h2>
+    <p>
+        We may update this privacy policy from time to time in order to reflect, for example, changes to our practices or for other operational, legal or regulatory reasons.
+    </p>
+    <h2>
+        Contact us
+    </h2>
+    <p>
+        For more information about our privacy practices, if you have questions, or if you would like to make a complaint, please contact us by e-mail at againstallskies@gmail.com or by mail using the details provided below:
+    </p>
+    <p>
+        Kiviparintie 2 E 3, 00920, Helsinki, Finland
+    </p>
+</main>
+
+<footer class="site-footer">
+    <p>
+        © 2026 Magonia Entertainment. All rights reserved.
+        <span class="footer-separator">•</span>
+        <a href="terms.html">Privacy Policy</a>
+    </p>
+</footer>
+
+</body>
+</html>
