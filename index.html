@@ -38,10 +38,12 @@
 
         h1 { 
             font-family: Victorian Orchid SemiBold, serif;
-            font-weight: normal; 
+            font-weight: lighter; 
             margin-bottom: 20px;
             font-variant: small-caps;
-            color: rgb(0, 0, 0);
+            background: -webkit-linear-gradient(180deg, rgba(217, 9, 23, 1) 0%, rgba(0, 3, 16, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             font-size: 60px;
         }
 
@@ -112,7 +114,7 @@
         }
 
         .section-inner {
-            max-width: 1000px;   /* ideal for long-form text */
+            max-width: 900px;   /* ideal for long-form text */
             margin: 0 auto;      /* centers it */
         }
         .video-embed {
@@ -421,8 +423,9 @@
             <a class="steam-link" href="https://store.steampowered.com" target="_blank">
                 Wishlist on Steam
             </a>
+
             <div class="section-inner">
-                <h2>News</h2>
+                <h1>News</h1>
 
                 <div class="instagram-grid">
                     <!-- Instagram embeds -->
