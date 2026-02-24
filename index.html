@@ -12,7 +12,15 @@
             src: url("fonts/victorian-orchid-light.woff2") format("woff2"),
                 url("fonts/victorian-orchid-light.woff") format("woff");
             font-weight: 300;
-            font-style: normal;
+            font-style: light;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: "Victorian Orchid SemiBold";
+            src: url("fonts/victorian-orchid-semibold.woff2") format("woff2"),
+                url("fonts/victorian-orchid-semibold.woff") format("woff");
+            font-weight: 600;
+            font-style: light;
             font-display: swap;
         }
 
@@ -25,8 +33,112 @@
         body {
             font-family: "Victorian Orchid Light", serif;
             background: black;
-            color: white;
+            color: rgb(0, 0, 0);
+        }
+
+        h1 { 
+            font-family: Victorian Orchid SemiBold, serif;
+            font-weight: normal; 
+            margin-bottom: 20px;
+            font-variant: small-caps;
+            color: rgb(0, 0, 0);
+            font-size: 60px;
+        }
+
+        h2 { 
+            font-family: Victorian Orchid SemiBold, serif;
+            font-weight: normal; 
+            margin-top: 35px;
+            margin-bottom: 20px;
+            font-variant: small-caps;
+            color: rgb(0, 0, 0);
+        }
+
+        p { font-weight: lighter; 
+            margin-bottom: 20px;
+            color: rgb(0, 0, 0);
+        }
+
+        a {
+        color: rgb(0, 0, 0);
+        }
+        
+         ul {
+            margin-left: 50px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+         li {
+            margin-bottom: 10px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
             overflow: hidden;
+        }
+        .scroll-content {
+            background-image: url("img/page-background.png");
+            background-repeat: repeat;
+            background-position: top left;
+        }
+
+        .section {
+            position: relative;
+            padding: 100px 20px;
+            background: #111;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            background-image: url("img/page-background.png");
+            background-repeat: repeat;      /* or no-repeat */
+            background-size: cover;         /* or contain */
+            background-position: center;
+        }
+
+        .section h2 {
+            margin-bottom: 40px;
+        }
+
+        .section-inner {
+            max-width: 1000px;   /* ideal for long-form text */
+            margin: 0 auto;      /* centers it */
+        }
+        .video-embed {
+            max-width: 960px;
+            margin: 0 auto 40px;
+            aspect-ratio: 16 / 9;
+        }
+
+        .steam-link {
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 18px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+
+        .instagram-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .video-embed iframe {
+            width: 100%;
+            height: 100%;
         }
 
         /* Header */
@@ -35,14 +147,16 @@
             top: 1px;
             left: 0;
             width: 100%;
-            padding: 4px 24px;
+            padding: 2px 40px;
+            padding-top: 6px;
             z-index: 10;
 
             display: flex;
             align-items: center;
             justify-content: space-between;
 
-            background: rgb(0, 0, 0);
+            background: #000310;
+            background: linear-gradient(90deg,rgba(0, 3, 16, 1) 65%, rgba(217, 9, 23, 1) 100%);
             outline: rgb(187, 187, 151) solid 1px; /* thin outline for visibility */
         }
 
@@ -95,20 +209,18 @@
 
         .site-footer {
             z-index: 3;
-            position: fixed;
             bottom: 1px;
             left: 0;
             width: 100%;
             padding: 10px;
             text-align: center;
             background: black;
-            color: #aaa;
             font-size: 14px;
             outline: rgb(187, 187, 151) solid 1px; /* thin outline for visibility */
         }
 
         .site-footer a {
-            color: #aaa;
+            color: silver;
             text-decoration: none;
         }
 
@@ -118,6 +230,10 @@
 
         .footer-separator {
             margin: 0 10px;
+        }
+
+        .footer-fontcolor {
+            color: silver;
         }
 
         @media (max-width: 768px) {
@@ -171,23 +287,6 @@
             border-radius: 0px;
         }
 
-        /* Video Background */
-        .video-container img,
-        .video-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        .video-container video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* keeps 16:9 without distortion */
-        }
-
         /* Center Button */
         .center-content {
             position: absolute;
@@ -228,7 +327,7 @@
         }
 
         .game-logo img {
-            width: 300px;   /* adjust to your logo */
+            width: 450px;   /* adjust to your logo */
             height: auto;
         }
         @media (max-width: 768px) {
@@ -275,8 +374,6 @@
     </div>
 
     <!-- Right: Socials + actions -->
-
-
         <div class="header-actions">
             <a href="press.html">
                 <img src="img/presskit-button.png" alt="Press Kit">
@@ -288,33 +385,62 @@
     </div>
 </header>
 
-<div class="video-container">
+
+
+
+<!-- HERO -->
+<section class="hero">
     <video autoplay muted loop playsinline>
         <source src="img/video.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+
+    <div class="center-content">
+        <!-- kickstarter support button? -->
+    </div>
+
+    <div class="game-logo">
+        <img src="img/game_logo.png" alt="Game Logo">
+    </div>
+</section>
+
+<!-- TRAILER -->
+<div class="scroll-content">
+    <section class="section trailer">
+        <div class="section-inner">
+            <h1>Bring Revolution to the Skies.</h1>
+            <h2>Navigate treacherous sky islands, build unique decks for a crew of unlikely heroes and breach the storm to uncover the true cost of power.</h2>
+            <div class="video-embed">
+                <iframe
+                    src="https://www.youtube.com/embed/5GDPnxeGRPE"
+                    title="Game Trailer"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <a class="steam-link" href="https://store.steampowered.com" target="_blank">
+                Wishlist on Steam
+            </a>
+            <div class="section-inner">
+                <h2>News</h2>
+
+                <div class="instagram-grid">
+                    <!-- Instagram embeds -->
+                    <blockquote class="instagram-media"></blockquote>
+                    <blockquote class="instagram-media"></blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 
-<div class="center-content">
-    <a href="https://www.kickstarter.com/?ref=nav" target="_blank" class="steam-cta">
-        <img 
-            src="img/support-button.png" 
-            alt="Support Us on Kickstarter"
-            class="steam-button"
-        >
-    </a>
-</div>
 
-<div class="game-logo">
-    <img src="img/game_logo.png" alt="Game Logo">
-</div>
 
-<div class="kickstarter-cloud">
-    <img src="img/kickstarter-cloud.png" alt="Kickstarter Cloud">
-</div>
+
+
 
 <footer class="site-footer">
-    <p>
+    <p class="footer-fontcolor">
         © 2026 Magonia Entertainment. All rights reserved.
         <span class="footer-separator">•</span>
         <a href="terms.html">Privacy Policy</a>
