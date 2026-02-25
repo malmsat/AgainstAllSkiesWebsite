@@ -10,7 +10,6 @@
         /* Press page specific styles */
 
         .section-inner {
-            max-width: 900px;   /* ideal for long-form text */
             margin: 0 auto;      /* centers it */
             max-width: 800px; /* reduced width for About the Game content */
             padding: 0 16px;
@@ -22,7 +21,7 @@
         }
         .media-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
             gap: 20px;
             margin-top: 30px;
         }
@@ -30,6 +29,21 @@
         .media-grid img {
             width: 100%;
             border-radius: 4px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .social-links a img {
+            height: 25px;
+            width: autopx;
+            transition: transform 200ms ease;
+        }
+        .social-links a:hover img,
+        .social-links a:focus img {
+            transform: scale(1.12);
         }
     </style>
 </head>
@@ -48,6 +62,29 @@
         <p>
             Experiment with new combos to unlock the full potential of your party as they venture into the unknown.
         </p>
+        <p>A free demo is set to release on ??? and Early access blah blah.</p>
+        <p>
+            <a href="">Access our press kit here</a>
+        </p>
+        
+
+        <h2>Game Overview</h2>
+        <p>
+            Title: Against All Skies
+        </p>
+        <p>
+            Genre: Party-based Deckbuilder with Roguelite Storytelling
+        </p>
+        <p>
+            Platforms: PC (Steam, Epic Games Store), Console (TBD)
+        </p>
+        <p>
+            Developer: Magonia Entertainment
+        </p>
+        <p>
+            Release Date: TBD
+        </p>
+
         <h2>Key Features</h2>
         <ul>
             <li>Assemble up to 10 different combinations of characters for your party.</li>
@@ -58,11 +95,39 @@
             <li>Experience a rich world and cast of characters with their own personal journeys.</li>
         </ul>
 
+        <h2>Developer</h2>
+        <p>
+            We explain who we are.
+        </p>
+
+        <h2>Press Contact Information</h2>
+        <p>
+            For press inquiries, please contact:
+        </p>
+        <p>
+            Email: ouremail.cöm
+        </p>
+            <div class="social-links">
+                <a href="https://www.youtube.com/@AgainstAllSkies" target="_blank" aria-label="YouTube">
+                    <img src="img/Youtube_Logo-b.png" alt="YouTube">
+                </a>
+                <a href="https://www.instagram.com/againstallskies/" target="_blank" aria-label="Instagram">
+                    <img src="img/Instagram_Logo-b.png" alt="Instagram">
+                </a>
+                <a href="https://www.tiktok.com/@against_all_skies" target="_blank" aria-label="TikTok">
+                    <img src="img/Tiktok_Logo-b.png" alt="TikTok">
+                </a>
+                <a href="https://bsky.app/profile/againstallskies.bsky.social" target="_blank" aria-label="Bluesky">
+                    <img src="img/Bluesky_Logo-b.png" alt="Bluesky">
+                </a>
+            </div>
+
+        <h1>Gallery</h1>
         <div class="media-grid">
-            <img src="gif1.gif" alt="Gameplay GIF">
-            <img src="gif2.gif" alt="Gameplay GIF">
-            <img src="image1.jpg" alt="Screenshot">
-            <img src="image2.jpg" alt="Screenshot">
+            <img src="img/placeholder-screenshot.jpg" alt="Screenshot">
+            <img src="img/placeholder-screenshot.jpg" alt="Screenshot">
+            <img src="img/placeholder-screenshot.jpg" alt="Screenshot">
+            <img src="img/placeholder-screenshot.jpg" alt="Screenshot">
         </div>
     </div>
 </main>
