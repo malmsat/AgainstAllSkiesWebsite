@@ -11,7 +11,7 @@
             src: url("fonts/victorian-orchid-light.woff2") format("woff2"),
                 url("fonts/victorian-orchid-light.woff") format("woff");
             font-weight: 300;
-            font-style: light;
+            font-style: normal;
             font-display: swap;
         }
         @font-face {
@@ -23,21 +23,39 @@
             font-display: swap;
         }
 
+        /* Apply the tiled background to the root so it fills the full viewport width */
+        html {
+            width: 100%;
+            /* tile the background and scale each tile to 50% of the viewport width */
+            background-image: url("img/page-background.png");
+            background-repeat: repeat;
+            background-position: top left;
+            background-size: 100% auto; /* each tile is 50% of viewport width */
+            background-color: #fff; /* fallback */
+        }
+
         body {
             font-family: "Victorian Orchid Light", serif;
-            background: black;
-            color: white;
+            /* keep body transparent so the root background shows edge-to-edge */
+            background: transparent;
+            color: black; /* make page text black */
             line-height: 1.6;
             letter-spacing: 0.03em;
-            font-weight: 500;
+            /* Use the light font weight so the type renders correctly */
+            font-weight: 300;
             font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            min-width: 100%;
         }
         h1 { 
             font-family: Victorian Orchid SemiBold, serif;
             font-weight: normal; 
             margin-bottom: 20px;
             font-variant: small-caps;
-            color: rgb(247, 247, 196);
+            background: -webkit-linear-gradient(180deg, rgba(217, 9, 23, 1) 0%, rgba(0, 3, 16, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             font-size: 50px;
         }
 
@@ -47,16 +65,17 @@
             margin-top: 35px;
             margin-bottom: 20px;
             font-variant: small-caps;
-            color: rgb(247, 247, 196);
+            color: black;
         }
 
         p { font-weight: lighter; 
             margin-bottom: 20px;
         }
 
-        a {
-        color: rgb(200, 205, 255);
-        }
+    /* make links in the content area black to match text; header/footer override below */
+    a {
+    color: black;
+    }
         
          ul {
             margin-left: 50px;
@@ -151,7 +170,7 @@
             padding: 10px;
             text-align: center;
             background: black;
-            color: #aaa;
+            color: #fff; /* keep footer text readable on dark background */
             font-size: 14px;
             outline: rgb(187, 187, 151) solid 1px; /* thin outline for visibility */
         }

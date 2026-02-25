@@ -44,7 +44,7 @@
             background: -webkit-linear-gradient(180deg, rgba(217, 9, 23, 1) 0%, rgba(0, 3, 16, 1) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-size: 60px;
+            font-size: 50px;
         }
 
         h2 { 
@@ -91,6 +91,17 @@
             height: 100vh;
             overflow: hidden;
         }
+        /* Make the hero video cover the full viewport while keeping aspect ratio */
+        .hero video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100vw;      /* ensure it spans the full viewport width */
+            height: 100vh;     /* ensure it spans the full viewport height */
+            transform: translate(-50%, -50%);
+            object-fit: cover;  /* crop to cover while preserving aspect ratio */
+            z-index: 0;
+        }
         .scroll-content {
             background-image: url("img/page-background.png");
             background-repeat: repeat;
@@ -112,23 +123,47 @@
         .section h2 {
             margin-bottom: 40px;
         }
+        /* Ensure all section headings are centered while body text can be left-aligned where needed */
+        .section .section-inner h1,
+        .section .section-inner h2 {
+            text-align: center;
+        }
 
         .section-inner {
             max-width: 900px;   /* ideal for long-form text */
             margin: 0 auto;      /* centers it */
         }
+        /* Narrow the About (trailer) section for improved readability */
+        .section.trailer .section-inner {
+            max-width: 800px; /* reduced width for About the Game content */
+            padding: 0 16px;
+                text-align: left; /* left-align About the Game content */
+        }
+        /* Keep the About heading centered while keeping paragraph/list left-aligned */
+        .section.trailer .steam-link + h1 {
+            text-align: center;
+        }
         .video-embed {
             max-width: 960px;
-            margin: 0 auto 40px;
+            margin: 0 auto 10px; /* reduced bottom margin to tighten spacing */
             aspect-ratio: 16 / 9;
         }
 
         .steam-link {
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 6px; /* reduce gap from video */
             font-size: 18px;
             text-decoration: none;
             color: rgb(0, 0, 0);
+        }
+
+        /* Make a linked Steam banner scale responsively */
+        .steam-link img {
+            max-width: 600px;
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 6px auto 0; /* match reduced spacing */
         }
 
         .instagram-grid {
@@ -137,6 +172,28 @@
             gap: 30px;
             max-width: 1100px;
             margin: 0 auto;
+        }
+        .features-list {
+            list-style: disc;
+            max-width: 900px;
+            margin: 20px auto 40px;
+            padding-left: 20px;
+            text-align: left;
+            color: rgb(0, 0, 0);
+            line-height: 1.6;
+        }
+
+        .features-list li {
+            margin-bottom: 12px;
+        }
+        /* Divider image used between trailer and About section */
+        .section-divider {
+            display: block;
+            max-width: 560px;
+            width: 80%;
+            height: auto;
+            margin: 8px auto 18px; /* small gap above and below */
+            opacity: 0.95;
         }
         .video-embed iframe {
             width: 100%;
@@ -218,6 +275,7 @@
             text-align: center;
             background: black;
             font-size: 14px;
+            background: linear-gradient(90deg,rgba(0, 3, 16, 1) 65%, rgba(217, 9, 23, 1) 100%);
             outline: rgb(187, 187, 151) solid 1px; /* thin outline for visibility */
         }
 
@@ -420,10 +478,25 @@
                 </iframe>
             </div>
 
-            <a class="steam-link" href="https://store.steampowered.com" target="_blank">
-                Wishlist on Steam
+            <a class="steam-link" href="https://store.steampowered.com/app/3938910/Against_All_Skies/" target="_blank" aria-label="Wishlist on Steam (Steam store)">
+                <img src="img/SoMe_Banner_steam.png" alt="Wishlist on Steam">
             </a>
+            <img src="img/pagebreak2_thinner.png" alt="section divider" class="section-divider">
 
+            <h1>About the Game</h1>
+            <p>Choose your own path through the skies as you fly your royal airship, the Helmholtz, between different islands, each with their own unique traits and environments. These biomes can help or hinder your plans to reach the eye of the storm.
+            With procedurally generated nodes and a new formation each run, experience an endlessly replayable sequence of sky islands.</p>
+
+            <h2>Features</h2>
+            <ul class="features-list">
+                <li>Assemble up to 10 different combinations of characters for your party</li>
+                <li>Enjoy endlessly different deckbuilding approaches and experiment with hundreds of cards</li>
+                <li>Dive into a dynamic turn-based combat system leading to unexpected advantages and combos when Resonating with your party</li>
+                <li>Navigate through different island environments that bring their own challenges and rewards each run</li>
+                <li>Unlock party-enhancing artifacts or character-specific gadgets</li>
+                <li>Experience a rich world and cast of characters with their own personal journeys</li>
+            </ul>
+            <img src="img/pagebreak2_thinner.png" alt="section divider" class="section-divider">
             <div class="section-inner">
                 <h1>News</h1>
 
