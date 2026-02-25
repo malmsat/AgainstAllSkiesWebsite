@@ -16,6 +16,12 @@
             text-align: left; /* left-align About the Game content */
             margin-bottom: 70px;
         }
+        @media (max-width: 768px) {
+            .section-inner {
+                max-width: 90%;
+            }
+        }
+
         h1 {
             margin-top: 80px;
         }
@@ -38,7 +44,7 @@
         }
         .social-links a img {
             height: 25px;
-            width: autopx;
+            width: auto;
             transition: transform 200ms ease;
         }
         .social-links a:hover img,

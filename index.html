@@ -36,11 +36,15 @@
             width: 100%;
             background-image: url("img/page-background.png");
             background-repeat: repeat;
-            background-position: top left;
+            background-position: top center;
             background-size: 100% auto; /* scale each tile to 50% of viewport width */
             background-color: #fff; /* fallback */
         }
-
+        @media (max-width: 768px) {
+            .section {
+                background-size: 175% auto;
+            }
+        }
         .section h2 {
             margin-bottom: 40px;
         }
@@ -250,11 +254,11 @@
 
         .kickstarter-cloud {
             position: absolute;
-            bottom: 0px;   /* distance from bottom */
-            left: -100px;    /* distance from right */
-            z-index: 1;     /* above image/video */
-            height: 500px; /* adjust as needed */
+            bottom: 0;
+            left: 0;
+            height: 500px;
             width: auto;
+            z-index: 1;
         }
 
         .game-logo img {
@@ -291,7 +295,7 @@
     </video>
 
     <div class="center-content">
-        <!-- kickstarter support button? -->
+        <img src="img/kickstarter-cloud.png" alt="Kickstarter cloud">
     </div>
 
     <div class="game-logo">
