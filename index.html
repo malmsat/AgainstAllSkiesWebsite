@@ -56,6 +56,7 @@
             margin-bottom: 20px;
             font-variant: small-caps;
             color: rgb(0, 0, 0);
+            font-size: 30px;
         }
 
         p { font-weight: lighter; 
@@ -191,7 +192,7 @@
         }
         .follow-row a { display: inline-block; }
         .follow-row img {
-            width: clamp(25px, 3.5vw, 48px); /* slightly smaller icons */
+            width: 35px;
             height: auto;
             display: block;
             transition: transform 200ms ease, filter 200ms ease;
@@ -320,7 +321,7 @@
         /* Footer stays in normal flow by default and will become fixed only when user reaches page bottom */
         .site-footer {
             position: static;
-            z-index: 3;
+            z-index: 100;
             left: 0;
             width: 100%;
             padding: 10px;
@@ -335,7 +336,6 @@
             position: fixed;
             bottom: 1px;
             left: 0;
-            z-index: 20; /* above page content */
             width: 100%;
         }
 
@@ -525,70 +525,69 @@
 </section>
 
 <!-- TRAILER -->
-<div class="scroll-content">
-    <section class="section trailer">
-        <div class="section-inner">
-            <h1>Bring Revolution to the Skies.</h1>
-            <h2>Navigate treacherous sky islands, build unique decks for a crew of unlikely heroes and breach the storm to uncover the true cost of power.</h2>
-            <div class="video-embed no-reveal">
-                <iframe
-                    src="https://www.youtube.com/embed/5GDPnxeGRPE"
-                    title="Game Trailer"
-                    allowfullscreen>
-                </iframe>
-            </div>
 
-            <a class="steam-link" href="https://store.steampowered.com/app/3938910/Against_All_Skies/" target="_blank" aria-label="Wishlist on Steam (Steam store)">
-                <img src="img/SoMe_Banner_steam.png" alt="Wishlist on Steam">
+<section class="section trailer">
+    <div class="section-inner">
+        <h1>Bring Revolution to the Skies.</h1>
+        <h2>Navigate treacherous sky islands, build unique decks for a crew of unlikely heroes and breach the storm to uncover the true cost of power.</h2>
+        <div class="video-embed no-reveal">
+            <iframe
+                src="https://youtu.be/iSsD9gqXDVg"
+                title="Game Trailer"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <a class="steam-link" href="https://store.steampowered.com/app/3938910/Against_All_Skies/" target="_blank" aria-label="Wishlist on Steam (Steam store)">
+            <img src="img/SoMe_Banner_steam.png" alt="Wishlist on Steam">
+        </a>
+        <img src="img/pagebreak2_thinner.png" alt="section divider" class="section-divider">
+
+        <h1>About the Game</h1>
+        <p>Choose your own path through the skies as you fly your royal airship, the Helmholtz, between different islands, each with their own unique traits and environments.
+        With procedurally generated nodes and a new formation each run, experience an endlessly replayable sequence of sky islands.</p>
+
+        <h2>Features</h2>
+        <ul class="features-list">
+            <li>Assemble up to 10 different combinations of characters for your party</li>
+            <li>Enjoy endlessly different deckbuilding approaches and experiment with hundreds of cards</li>
+            <li>Dive into a dynamic turn-based combat system leading to unexpected advantages and combos when Resonating with your party</li>
+            <li>Navigate through different island environments that bring their own challenges and rewards each run</li>
+            <li>Unlock party-enhancing artifacts or character-specific gadgets</li>
+            <li>Experience a rich world and cast of characters with their own personal journeys</li>
+        </ul>
+        <img src="img/pagebreak2_thinner.png" alt="section divider" class="section-divider">
+        <div class="section-inner wide">
+            <h1>News</h1>
+
+            <div class="instagram-grid">
+                <!-- Instagram embeds -->
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DU_OEFljTQT/" data-instgrm-version="14"></blockquote>
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DU3j7TjDUDQ/" data-instgrm-version="14"></blockquote>
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DUtKZ8TCCdq/" data-instgrm-version="14"></blockquote>
+            </div>
+        </div>
+        <img src="img/pagebreak2_thinner.png" alt="section divider" class="section-divider">
+        <h2>Follow Us</h2>
+        <div class="follow-row">
+            <a href="https://www.youtube.com/@AgainstAllSkies" target="_blank" aria-label="YouTube">
+                <img src="img/Youtube_Logo.png" alt="YouTube">
             </a>
-            <img src="img/pagebreak2_thinner.png" alt="section divider" class="section-divider">
-
-            <h1>About the Game</h1>
-            <p>Choose your own path through the skies as you fly your royal airship, the Helmholtz, between different islands, each with their own unique traits and environments.
-            With procedurally generated nodes and a new formation each run, experience an endlessly replayable sequence of sky islands.</p>
-
-            <h2>Features</h2>
-            <ul class="features-list">
-                <li>Assemble up to 10 different combinations of characters for your party</li>
-                <li>Enjoy endlessly different deckbuilding approaches and experiment with hundreds of cards</li>
-                <li>Dive into a dynamic turn-based combat system leading to unexpected advantages and combos when Resonating with your party</li>
-                <li>Navigate through different island environments that bring their own challenges and rewards each run</li>
-                <li>Unlock party-enhancing artifacts or character-specific gadgets</li>
-                <li>Experience a rich world and cast of characters with their own personal journeys</li>
-            </ul>
-            <img src="img/pagebreak2_thinner.png" alt="section divider" class="section-divider">
-            <div class="section-inner wide">
-                <h1>News</h1>
-
-                <div class="instagram-grid">
-                    <!-- Instagram embeds -->
-                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DU_OEFljTQT/" data-instgrm-version="14"></blockquote>
-                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DU3j7TjDUDQ/" data-instgrm-version="14"></blockquote>
-                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DUtKZ8TCCdq/" data-instgrm-version="14"></blockquote>
-                </div>
-            </div>
-            <img src="img/pagebreak2_thinner.png" alt="section divider" class="section-divider">
-            <h1>Follow Us</h1>
-            <div class="follow-row">
-                <a href="https://www.youtube.com/@AgainstAllSkies" target="_blank" aria-label="YouTube">
-                    <img src="img/Youtube_Logo.png" alt="YouTube">
-                </a>
-                <a href="https://www.instagram.com/againstallskies/" target="_blank" aria-label="Instagram">
-                    <img src="img/Instagram_Logo.png" alt="Instagram">
-                </a>
-                <a href="https://www.tiktok.com/@against_all_skies" target="_blank" aria-label="TikTok">
-                    <img src="img/Tiktok_Logo.png" alt="TikTok">
-                </a>
-                <a href="https://bsky.app/profile/againstallskies.bsky.social" target="_blank" aria-label="Bluesky">
-                    <img src="img/Bluesky_Logo.png" alt="Bluesky">
-                </a>
-            </div>
-            <a class="steam-link" href="https://store.steampowered.com/app/3938910/Against_All_Skies/" target="_blank" aria-label="Join our Discord Community">
-                <img src="img/SoMe_Banner_dc.png" alt="Join our Discord Community">
+            <a href="https://www.instagram.com/againstallskies/" target="_blank" aria-label="Instagram">
+                <img src="img/Instagram_Logo.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@against_all_skies" target="_blank" aria-label="TikTok">
+                <img src="img/Tiktok_Logo.png" alt="TikTok">
+            </a>
+            <a href="https://bsky.app/profile/againstallskies.bsky.social" target="_blank" aria-label="Bluesky">
+                <img src="img/Bluesky_Logo.png" alt="Bluesky">
             </a>
         </div>
-    </section>
-</div>
+        <a class="steam-link" href="https://store.steampowered.com/app/3938910/Against_All_Skies/" target="_blank" aria-label="Join our Discord Community">
+            <img src="img/SoMe_Banner_dc.png" alt="Join our Discord Community">
+        </a>
+    </div>
+</section>
 
 
 
