@@ -180,6 +180,34 @@
             margin: 0 auto;
             padding: 0 20px; /* small side padding so it doesn't touch the viewport edge */
         }
+        /* Follow Us icon row */
+        .follow-row {
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+            margin: 18px 0 10px;
+            padding: 0 6px;
+        }
+        .follow-row a { display: inline-block; }
+        .follow-row img {
+            width: clamp(25px, 3.5vw, 48px); /* slightly smaller icons */
+            height: auto;
+            display: block;
+            transition: transform 200ms ease, filter 200ms ease;
+            filter: grayscale(100%) brightness(0) saturate(100%); /* render as black */
+        }
+        .follow-row a:hover img,
+        .follow-row a:focus img {
+            transform: scale(1.12);
+            /* tint to a red tone on hover */
+            filter: grayscale(0%) sepia(1) saturate(800%) hue-rotate(-10deg) brightness(0.95);
+        }
+        .follow-row a { cursor: pointer; }
+        .follow-row a:focus {
+            outline: 2px solid rgba(217,9,23,0.35);
+            outline-offset: 4px;
+        }
         .features-list {
             list-style: disc;
             max-width: 900px;
@@ -516,7 +544,7 @@
             <img src="img/pagebreak2_thinner.png" alt="section divider" class="section-divider">
 
             <h1>About the Game</h1>
-            <p>Choose your own path through the skies as you fly your royal airship, the Helmholtz, between different islands, each with their own unique traits and environments. These biomes can help or hinder your plans to reach the eye of the storm.
+            <p>Choose your own path through the skies as you fly your royal airship, the Helmholtz, between different islands, each with their own unique traits and environments.
             With procedurally generated nodes and a new formation each run, experience an endlessly replayable sequence of sky islands.</p>
 
             <h2>Features</h2>
@@ -539,6 +567,25 @@
                     <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DUtKZ8TCCdq/" data-instgrm-version="14"></blockquote>
                 </div>
             </div>
+            <img src="img/pagebreak2_thinner.png" alt="section divider" class="section-divider">
+            <h1>Follow Us</h1>
+            <div class="follow-row">
+                <a href="https://www.youtube.com/@AgainstAllSkies" target="_blank" aria-label="YouTube">
+                    <img src="img/Youtube_Logo.png" alt="YouTube">
+                </a>
+                <a href="https://www.instagram.com/againstallskies/" target="_blank" aria-label="Instagram">
+                    <img src="img/Instagram_Logo.png" alt="Instagram">
+                </a>
+                <a href="https://www.tiktok.com/@against_all_skies" target="_blank" aria-label="TikTok">
+                    <img src="img/Tiktok_Logo.png" alt="TikTok">
+                </a>
+                <a href="https://bsky.app/profile/againstallskies.bsky.social" target="_blank" aria-label="Bluesky">
+                    <img src="img/Bluesky_Logo.png" alt="Bluesky">
+                </a>
+            </div>
+            <a class="steam-link" href="https://store.steampowered.com/app/3938910/Against_All_Skies/" target="_blank" aria-label="Join our Discord Community">
+                <img src="img/SoMe_Banner_dc.png" alt="Join our Discord Community">
+            </a>
         </div>
     </section>
 </div>
