@@ -147,14 +147,14 @@
 
         .instagram-grid {
             display: grid;
-            /* match the embed width and allow more columns on wide screens */
             grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
             gap: 30px;
-            /* increase max-width so more 320px tiles fit side-by-side on large viewports */
             max-width: 1600px;
             margin: 0 auto;
-            padding: 0 20px; /* small side padding so it doesn't touch the viewport edge */
+
+            justify-items: center; /* 🔥 key line */
         }
+
         /* Follow Us icon row */
         .follow-row {
             display: flex;
@@ -171,6 +171,15 @@
             display: block;
             transition: transform 200ms ease;
         }
+        @media (max-width: 768px) {
+            .follow-row {
+                gap: 30px;
+            }
+            .follow-row img {
+                width: 24px;
+            }
+        }
+
         .follow-row a:hover img,
         .follow-row a:focus img {
             transform: scale(1.12);
