@@ -2,30 +2,35 @@
 (function() {
     // Insert header at the beginning of body
     var headerHTML = `<header>
-    <div class="social-icons">
-        <a href="index.html">
-            <img src="img/company-logo.png" alt="Company Logo" class="company-logo">
-        </a>
-        <a href="https://www.youtube.com/@AgainstAllSkies" target="_blank">
-            <img src="img/Youtube_Logo.png" alt="YouTube">
-        </a>
-        <a href="https://www.instagram.com/againstallskies/" target="_blank">
-            <img src="img/Instagram_Logo.png" alt="Instagram">
-        </a>
-        <a href="https://www.tiktok.com/@against_all_skies" target="_blank">
-            <img src="img/TikTok_Logo.png" alt="TikTok">
-        </a>
-        <a href="https://bsky.app/profile/againstallskies.bsky.social" target="_blank">
-            <img src="img/Bluesky_Logo.png" alt="Bluesky">
-        </a>
+    <div class="header-left">
+        <div class="company-logo">
+            <a href="index.html">
+                <img src="img/company-logo.png" alt="Company Logo" class="company-logo">
+            </a>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.youtube.com/@AgainstAllSkies" target="_blank">
+                <img src="img/Youtube_Logo.png" alt="YouTube">
+            </a>
+            <a href="https://www.instagram.com/againstallskies/" target="_blank">
+                <img src="img/Instagram_Logo.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@against_all_skies" target="_blank">
+                <img src="img/TikTok_Logo.png" alt="TikTok">
+            </a>
+            <a href="https://bsky.app/profile/againstallskies.bsky.social" target="_blank">
+                <img src="img/Bluesky_Logo.png" alt="Bluesky">
+            </a>
+        </div>
     </div>
-    <div class="header-actions">
-        <a href="press.html">
-            <img src="img/presskit-button.png" alt="Press Kit">
-        </a>
-        <a href="https://store.steampowered.com/app/3938910/Against_All_Skies/" target="_blank">
-            <img src="img/wishlist-button.png" alt="Wishlist on Steam">
-        </a>
+        <div class="header-actions">
+            <a href="press.html">
+                <img src="img/presskit-button.png" alt="Press Kit">
+            </a>
+            <a href="https://store.steampowered.com/app/3938910/Against_All_Skies/" target="_blank">
+                <img src="img/wishlist-button.png" alt="Wishlist on Steam">
+            </a>
+        </div>
     </div>
 </header>`;
 
