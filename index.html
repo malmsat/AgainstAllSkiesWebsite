@@ -270,33 +270,39 @@
             bottom: 50px;   /* distance from bottom */
             right: 150px;    /* distance from right */
             z-index: 5;     /* above image/video */
-        }
-
-        .kickstarter-cloud {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            height: 500px;
-            width: auto;
-            z-index: 1;
+            animation: fadeIn 1s ease-out forwards;
         }
 
         .game-logo img {
             width: 450px;   /* adjust to your logo */
             height: auto;
         }
+
+        .kickstarter-cloud {
+            position: absolute;
+            bottom: -20px;   /* distance from bottom */
+            left: 0px;    /* distance from right */
+            z-index: 5;     /* above image/video */
+            animation: fadeIn 1s ease-out forwards;
+        }
+        .kickstarter-cloud img {
+            width: 700px;   /* adjust to your logo */
+            height: auto;
+        }
+
+
         @media (max-width: 768px) {
             .game-logo {
-                bottom: 20px;
-                right: 20px;
+                top: 120px;
+                right: 20px; 
             }
-
+            .kickstarter-cloud img{
+                width: 400px;
+            }
             .game-logo img {
                 width: 300px;
+                width: 200px;
             }
-        }
-        .game-logo {
-            animation: fadeIn 1s ease-out forwards;
         }
 
         @keyframes fadeIn {
@@ -314,6 +320,10 @@
         Your browser does not support the video tag.
     </video>
 
+    <div class="kickstarter-cloud">
+        <img src="img/kickstarter-cloud.png" alt="Kickstarter Cloud">
+    </div>
+    
     <div class="game-logo">
         <img src="img/game_logo.png" alt="Game Logo">
     </div>

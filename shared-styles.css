@@ -186,11 +186,6 @@ header a {
     transition: transform 0.2s ease;
 }
 
-.header-actions a:hover img {
-    opacity: 1;
-    transform: scale(1.1);
-}
-
 header a img {
     width: auto;
     height: 20px;
@@ -204,6 +199,11 @@ header a:hover img {
 
 .company-logo {
     height: 35px;
+}
+
+.company-logo a:hover img {
+    opacity: 1;
+    transform: scale(1);
 }
 
 /* Footer */
