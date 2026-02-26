@@ -155,8 +155,9 @@ header a {
 
 .company-logo img {
     width: auto;
-    height: 17px;
+    height: 12px;
     opacity: 0.8;
+    margin-bottom: 6px;
 }
 
 .header-actions {
