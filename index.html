@@ -48,6 +48,7 @@
         .section h2 {
             margin-bottom: 40px;
         }
+
         /* Ensure all section headings are centered while body text can be left-aligned where needed */
         .section .section-inner h1,
         .section .section-inner h2 {
@@ -55,7 +56,6 @@
         }
 
         .section-inner {
-            max-width: 900px;   /* ideal for long-form text */
             margin: 0 auto;      /* centers it */
             max-width: 800px; /* reduced width for About the Game content */
             padding: 0 16px;
@@ -63,9 +63,12 @@
         }
         /* Allow selectively larger inner containers (use .wide on the wrapper) */
         .section-inner.wide {
-            max-width: 1200px;
-            padding: 0 20px;
+            max-width: 1100px;
+            text-align: center;
+            padding-left: 0;
+            padding-right: 0;
         }
+
         /* Narrow the About (trailer) section for improved readability */
         .section.trailer .section-inner {
         }
@@ -173,7 +176,7 @@
             list-style: disc;
             max-width: 900px;
             margin: 20px auto 40px;
-            padding-left: 70px;
+            padding-left: 40px;
             text-align: left;
             color: rgb(0, 0, 0);
             line-height: 1.6;
