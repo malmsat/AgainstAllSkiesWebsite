@@ -299,10 +299,22 @@
             animation: fadeIn 1s ease-out forwards;
         }
         .kickstarter-cloud img {
-            width: 700px;   /* adjust to your logo */
+            width: 600px;   /* adjust to your logo */
             height: auto;
         }
+        .hero-video.mobile {
+            display: none;
+        }
 
+        @media (max-width: 768px) {
+            .hero-video.desktop {
+                display: none;
+            }
+
+            .hero-video.mobile {
+                display: block;
+            }
+        }
 
         @media (max-width: 768px) {
             .game-logo {
@@ -328,9 +340,12 @@
 
 <!-- HERO -->
 <section class="hero">
-    <video autoplay muted loop playsinline>
+    <video class="hero-video desktop" autoplay muted loop playsinline>
         <source src="img/video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+    </video>
+
+    <video class="hero-video mobile" autoplay muted loop playsinline>
+        <source src="img/mobilevideo.mp4" type="video/mp4">
     </video>
 
     <div class="kickstarter-cloud">
@@ -402,7 +417,7 @@
                     <img src="img/Instagram_Logo.png" alt="Instagram">
                 </a>
                 <a href="https://www.tiktok.com/@against_all_skies" target="_blank" aria-label="TikTok">
-                    <img src="img/Tiktok_Logo.png" alt="TikTok">
+                    <img src="img/TT_Logo.png" alt="TikTok">
                 </a>
                 <a href="https://bsky.app/profile/againstallskies.bsky.social" target="_blank" aria-label="Bluesky">
                     <img src="img/Bluesky_Logo.png" alt="Bluesky">
