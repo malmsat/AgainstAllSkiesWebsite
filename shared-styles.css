@@ -86,6 +86,16 @@ h2 {
         line-height: 1.5;
     }
 
+    .section h1 {
+        font-size: 60px;
+        line-height: 1.1;
+    }
+
+    .section h2 {
+        font-size: 40;
+        line-height: 1.1;
+    }
+
     ul {
         margin-left: 30px;
     }
