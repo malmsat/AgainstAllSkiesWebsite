@@ -302,7 +302,8 @@
             width: 600px;   /* adjust to your logo */
             height: auto;
         }
-        .hero-video.mobile {
+
+        .hero-image.mobile {
             display: none;
         }
 
@@ -311,8 +312,12 @@
                 display: none;
             }
 
-            .hero-video.mobile {
+            .hero-image.mobile {
                 display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center top;
             }
             .hero video {
                 object-fit: cover;
@@ -348,9 +353,8 @@
         <source src="img/video.mp4" type="video/mp4">
     </video>
 
-    <video class="hero-video mobile" autoplay muted loop playsinline>
-        <source src="img/mobilevideo.mp4" type="video/mp4">
-    </video>
+    <!-- Mobile hero image -->
+    <img class="hero-image mobile" src="img/mobile-hero.png" alt="Hero Image">
 
     <div class="kickstarter-cloud">
         <img src="img/kickstarter-cloud.png" alt="Kickstarter Cloud">
