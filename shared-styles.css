@@ -127,6 +127,7 @@ header {
     background: #000310;
     background: linear-gradient(90deg, rgba(0, 3, 16, 1) 65%, rgba(217, 9, 23, 1) 100%);
     outline: rgb(187, 187, 151) solid 1px;
+    box-sizing: border-box;
 }
 
 header a {
@@ -241,27 +242,27 @@ header a:hover img {
 /* Responsive */
 @media (max-width: 768px) {
     header {
-        padding: 5px 20px;
+        padding: 5px 10px;
     }
     .social-icons {
         gap: 12px;
     }
-    .company-logo {
-        height: 28px;
+    .company-logo img {
+        height: 10px;
     }
     .header-left {
         flex-direction: column;
         align-items: flex-start;
-        gap: 8px;
+        gap: 0px;
     }
     .social-icons img {
-        height: 20px;
+        height: 15px;
         width: auto;
         padding-left: 10px;
     }
 
     .header-actions img {
-        height: 35px;
+        height: 25px;
         width: auto;
     }
 

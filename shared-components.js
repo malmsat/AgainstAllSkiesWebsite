@@ -16,7 +16,7 @@
                 <img src="img/Instagram_Logo.png" alt="Instagram">
             </a>
             <a href="https://www.tiktok.com/@against_all_skies" target="_blank">
-                <img src="img/TikTok_Logo-w.png" alt="TikTok">
+                <img src="img/Tiktok_Logo-w.png" alt="TikTok">
             </a>
             <a href="https://bsky.app/profile/againstallskies.bsky.social" target="_blank">
                 <img src="img/Bluesky_Logo.png" alt="Bluesky">
